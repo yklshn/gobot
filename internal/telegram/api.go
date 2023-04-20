@@ -21,7 +21,7 @@ func TelegramBot(wg *sync.WaitGroup, ch chan models.Message) {
 	Birthday := make(map[string][]int64)
 	Stuff := make(map[string][]int64)
 	Memes := make(map[string][]int64)
-	bot, err := tgbotapi.NewBotAPI("6009543849:AAEgKrbo1XsQVW2cyzYVXzliK7yBO97dGms")
+	bot, err := tgbotapi.NewBotAPI("")
 	if err != nil {
 		log.Panic(err)
 	}
